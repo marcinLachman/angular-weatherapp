@@ -1,0 +1,27 @@
+<section>
+  <div class="font-bold text-4xl m-2 text-center">
+    <p>{{ weatherData.name }}</p>
+    <p class="lg:text-4xl text-xl">( Godzina: {{ weatherData.dateTime }} )</p>
+  </div>
+  <div
+    class="bg-primary flex flex-col flex-1 lg:flex lg:flex-row justify-between items-center w-full"
+  >
+    <div>
+      <ul class="font-medium text-sm lg:text-lg m-4 text-white space-y-4 ml-10">
+        <li>Temperatura: {{ weatherData.temp }} &#8451;</li>
+        <li>Temepratura odczuwalna: {{ weatherData.tempFealsLike }} &#8451;</li>
+        <li>Ciśnienie: {{ weatherData.pressure }} hPa</li>
+        <li>Wilgotność: {{ weatherData.humidity }} %</li>
+        <li>Wiatr: {{ weatherData.windSpeed }} metr/sec</li>
+        <li>Wschód: {{ weatherData.sunrise }}</li>
+        <li>Zachód: {{ weatherData.sunset }}</li>
+      </ul>
+    </div>
+    <div class="flex flex-col items-center justify-center lg:space-y-4 mr-24">
+      <img class="" src="{{ weatherData.iconUrl }}" width="100" height="100" />
+      <p class="text-white text-sm lg:text-xl font-medium mb-4">
+        {{ weatherData.description }}
+      </p>
+    </div>
+  </div>
+</section>

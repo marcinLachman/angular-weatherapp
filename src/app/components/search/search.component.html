@@ -1,0 +1,24 @@
+<aside>
+  <form class="flex flex-col" (ngSubmit)="onSubmit()">
+    <label class="font-medium text-lg lg:m-3" for="search"
+      >Enter City Name:</label
+    >
+    <input
+      class="p-2 outline-none"
+      type="text"
+      name="search"
+      id="search"
+      [(ngModel)]="search"
+      placeholder="E.g. New York, London"
+    />
+    <button
+      class="bg-primary mt-3 p-3 text-white font-medium text-lg cursor-pointer hover:bg-blue-900 transition duration-500"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <p class="text-2xl text-red-700 font-medium text-center mt-4" *ngIf="error">
+    Nie ma takiego miasta...
+  </p>
+</aside>

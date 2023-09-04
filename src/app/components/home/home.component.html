@@ -1,0 +1,16 @@
+<main
+  class="flex flex-col justify-center items-center w-full lg:flex lg:flex-row lg:items-start lg:space-x-4"
+>
+  <div class="w-1/3">
+    <app-search
+      (OnSearchCity)="searchCity($event)"
+      [error]="error"
+    ></app-search>
+  </div>
+  <div class="w-2/3">
+    <app-weather-display
+      *ngFor="let weatherData of weatherDatas"
+      [weatherData]="weatherData"
+    ></app-weather-display>
+  </div>
+</main>
