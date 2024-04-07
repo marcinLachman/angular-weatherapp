@@ -6,7 +6,7 @@ An application that displays the current weather. It utilizes the API from [Open
 
 ## Demo
 
-Link to demo: https://angular-weatherapp.vercel.app/(#)
+Link to demo: https://angular-weatherapp.vercel.app/
 
 ## Technologies Used
 
